@@ -3,51 +3,30 @@
 
 
 ## Description
-* Rocking Employee Management System is an app built with node.js, inquirer,etc. that interfaces with mysql. It is command line driven and allows the user to manipulate the data stored in the employees_db database.
+* ORM Sequelize Backend is the backend to an eCommerce system.  
 
-* When starting the application, the user is presented with a list of options that are clear and easy to follow.
+* The eCommerce system has Categories, Products, ProductTags and Tags.
 
-* The changes that the user requests are reflected in the database.
+* Categories can have many Products.  A Product can belong to only one Category.
 
-* The Bonus commands of "View Employees By Manager" and "Update Employee Manager were implemented.
+* A Product can belong to many Tags, and a Tag can belong to many Products
 
-* The chalk module was used to change the console.log color to make the text more apparent.
+* We use Insomnia to manipulate the database. Routes were created to perform RESTful CRUD Operations (create, read, update and delete). The Walkthrough Video demonstrates a GET, GET:id, PUT, POST and DELETE for Categories, Products and Tags.
 
-* I used a SELF JOIN to list the manager name in addition to the manager id in viewAllEmployees(), and in findAllManagers()
+* When a Category is deleted, all the Products in the category are also deleted.
 
-* I used the DISTINCT keyword to remove duplicates from findAllManagers().
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-## Screenshots
-
-
-### Initial screenshot
-
-
-![Initial screenshot](./images/Initial-screenshot.PNG)
-
-
-### ViewAllEmployees Example
-
-
-![View All Employees](./images/ViewAllEmployees.PNG )
-
 
 
 ## Built With
 
 * Express
 * Sequelize
-* mysql
 * mysql2
-* HTML
-* CSS
 * Javascript
 * node.js
-* inquirer
-* chalk
-
+* dotenv
 
 ## Installation Instructions
 
@@ -85,15 +64,15 @@ and then you can interface with the application from an application like Insomni
 
 ### Walkthrough Video Links
 
-**Required Commands**
-[Rocking Employee Management app](https://watch.screencastify.com/v/DkkAK96SiyKpON5ybx7k)
+**Walkthrough of most of the commands**
+[Demonstrating Crud](https://watch.screencastify.com/v/sqyYRCrTvdpQYcbNslzx)
 
-**Bonus Commands - ViewAllEmployeesByManager, UpdateEmployeeManager**
-[Manager Bonus Commands](https://watch.screencastify.com/v/YDKHTxTGdMZ2uYkWwvsR)
+**Last Tag Delete command that didn't fit in 5 minutes**
+[Final Crud](https://watch.screencastify.com/v/wZYl1lfyiaNkokbxsfiE)
 
 ### Repository
 
-[GitHub repository for this project](https://github.com/llwaterhouse/Rocking-Employee-Mgmt-Sys)
+[GitHub repository for this project](https://github.com/llwaterhouse/ORM-Sequelize-Backend)
 
 
 ## Acknowledgements

@@ -16,7 +16,7 @@ Category.hasMany(Product, {
   // Define the third table needed to store the foreign keys
     foreignKey: 'category_id',
    onDelete: "CASCADE",
-  //  onDelete: "SET NULL",
+  
 });
 
 // Products belongToMany Tags (through ProductTag)
